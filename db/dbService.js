@@ -49,6 +49,7 @@ class DbService {
 			});
 			// console.log(response.insertId);
 			return {
+				status: 200,
 				calculation_id: response.insertId,
 				input: calculation.input,
 				output: calculation.output,

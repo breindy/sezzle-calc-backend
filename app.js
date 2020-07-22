@@ -8,8 +8,6 @@ dotenv.config();
 
 var dbConfig = require('./db/config/config');
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var dataRouter = require('./routes/data');
 var recentRouter = require('./routes/recent');
 var insertRouter = require('./routes/insert');
 
@@ -22,8 +20,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/data', dataRouter);
 app.use('/recent', recentRouter);
 app.use('/insert', insertRouter);
 

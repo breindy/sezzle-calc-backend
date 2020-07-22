@@ -4,11 +4,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const connection = mysql.createConnection({
-	host: process.env.HOST,
-	user: process.env.USERNAME,
-	password: process.env.PASSWORD,
-	database: process.env.DATABASE,
-	port: process.env.DB_PORT
+	host: 'us-cdbr-east-02.cleardb.com',
+	user: 'b380eb6184ed5e',
+	password: '7628e044',
+	database: 'heroku_a34860b1d5f28ef',
+	port: 3306
 });
 
 connection.connect((err) => {
